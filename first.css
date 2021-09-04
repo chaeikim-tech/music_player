@@ -1,0 +1,247 @@
+@import "reset.css";
+@import "second.css";
+
+body {
+  background-color: rgb(180, 179, 179);
+  margin: 50px;
+  display: flex;
+}
+
+.screen-one {
+  width: 250px;
+  height: 540px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.screen-one header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  color: #5bbbf7;
+}
+
+.screen-one main {
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-one .music-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-header img {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  box-shadow: 3px 5px 5px 2px rgba(255, 152, 87, 0.3);
+}
+
+.music-header div:nth-child(3) {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.music-button {
+  display: flex;
+  justify-content: center;
+  margin: 18px;
+}
+
+.music-button div {
+  width: 85px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-button div:first-child {
+  background-color: #5bbbf7;
+  color: white;
+  margin-right: 10px;
+  box-shadow: 5px 5px 5px 0 rgb(89, 187, 247, 0.4);
+}
+
+.music-button div:first-child:hover {
+  color: #5bbbf7;
+  background-color: white;
+  cursor: pointer;
+}
+
+.fa-heartbeat {
+  color: #5bbbf7;
+}
+
+.music-button div:nth-child(2) {
+  background-color: #f9f9fa;
+  box-shadow: 5px 5px 5px 0 rgb(89, 187, 247, 0.4);
+}
+
+.music-button div span {
+  opacity: 0.5;
+  margin-left: 5px;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 9px;
+}
+
+.music-list .day6-album {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.day6-album__now img {
+  position: relative;
+}
+
+.day6-album__now .day6-album__playing {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-color: rgba(48, 48, 48, 0.7);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: absolute;
+}
+
+@keyframes playingBars {
+  0% {
+    opacity: 0.3;
+    transform: scaleY(0.3);
+  }
+  20% {
+    opacity: 0.8;
+    transform: scaleY(0.6);
+  }
+  30% {
+    opacity: 0.8;
+    transform: scaleY(0.3);
+  }
+  60% {
+    opacity: 0.8;
+    transform: scaleY(0.3);
+  }
+  80% {
+    opacity: 0.8;
+    transform: scaleY(0.3);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scaleY(0.3);
+  }
+}
+
+.day6-album__playing-line {
+  width: 5px;
+  height: 30px;
+  background-color: #5bbbf7;
+  position: relative;
+}
+
+.day6-album__playing-line:first-child {
+  animation: playingBars 1.5s ease-in-out infinite;
+  animation-delay: 0.2s;
+  height: 40px;
+}
+
+.day6-album__playing-line:nth-child(2) {
+  animation: playingBars 1s ease-in-out infinite;
+  height: 40px;
+}
+
+.day6-album__playing-line:last-child {
+  animation: playingBars 1.5s ease-in-out infinite;
+  animation-delay: 0.2s;
+  height: 40px;
+}
+
+.day6-album__now {
+  border-radius: 15px;
+  box-shadow: 2px 1px 1px rgba(177, 177, 177, 0.4);
+  position: relative;
+}
+
+.day6-album__textmenu {
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day6-album__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.day6-album__text_singer {
+  font-weight: 800;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.day6-album__text_title {
+  font-weight: 900;
+}
+
+.day6-album img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.fa-ellipsis-v {
+  color: #5bbbf7;
+}
+
+.music-player {
+  width: 200px;
+  height: 50px;
+  margin: 5px 0 0 5px;
+  padding: 0 20px;
+  background-color: #5bbbf7;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 10px 0 rgb(89, 187, 247, 0.4);
+}
+
+.music-player__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-pause {
+  font-size: 15px;
+  margin: 0 15px;
+}
+
+.music-player__text_singer {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-bottom: 7px;
+}

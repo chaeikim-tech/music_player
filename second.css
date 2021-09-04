@@ -1,0 +1,83 @@
+.screen-two {
+  width: 250px;
+  height: 540px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 60px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.screen-two header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  color: #5bbbf7;
+}
+
+.albuminfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.albuminfo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: 10px 10px 15px 0 rgb(89, 187, 247, 0.4);
+}
+
+.albuminfo h3 {
+  margin: 10px 0 0 4px;
+}
+
+h5 {
+  margin: 10px 0;
+  opacity: 0.5;
+}
+
+.albuminfo__time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.5;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.albuminfo__musicslide {
+  width: 210px;
+}
+
+.albuminfo__musicslide_range {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+}
+
+.player-icons {
+  color: #5bbbf7;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playicon {
+  width: 45px;
+  height: 45px;
+  background-color: #5bbbf7;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 0 rgb(89, 187, 247, 0.5);
+}
+
+.fa-undo-alt,
+.fa-random {
+  opacity: 0.5;
+}
